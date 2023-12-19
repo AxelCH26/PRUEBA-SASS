@@ -1,0 +1,43 @@
+@mixin flex-articles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@mixin flex-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sizes($ancho , $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+
+
+/*ESTRCUTURA MAIN*/
+#box {
+    @include flex-articles;
+    .box__art1 {
+        @include sizes(150px, 200px);
+        
+        background-color: green;
+        border: $border-boxes;
+        @include flex-align;
+    }
+    .box__art2 {
+        @extend .box__art1;
+    }
+
+
+    .box__art3 {
+
+    }
+    .box__art4 {
+
+    }
+}
+
+

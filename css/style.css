@@ -1,0 +1,24 @@
+/*RESET CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*ESTRCUTURA MAIN*/
+#box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#box .box__art1, #box .box__art2 {
+  width: 150px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid rgb(233, 5, 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
